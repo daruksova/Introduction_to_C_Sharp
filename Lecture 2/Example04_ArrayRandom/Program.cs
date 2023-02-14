@@ -22,5 +22,26 @@ void PrintArray(int[] col)
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1;
+    while (index < count)
+    {
+        if (collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
 FillArray(array);
 PrintArray(array);
+
+System.Console.WriteLine();
+int pos = IndexOf(array, 11);
+System.Console.WriteLine(pos);
