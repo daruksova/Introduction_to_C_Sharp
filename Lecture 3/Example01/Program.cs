@@ -46,12 +46,10 @@ int year = Method3();
 
 string Method4(int count, string txt)
 {
-    int i = 0;
     string result = String.Empty;
-    while (i < count)
+    for (int i = 0; i < count; i++)
     {
         result = result + txt;
-        i++;
     }
     return result;
 }
