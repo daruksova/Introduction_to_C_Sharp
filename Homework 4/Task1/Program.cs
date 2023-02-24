@@ -19,6 +19,10 @@ int DegreeOfNumber(int numA, int numB)
     {
         degree *= numA;
     }
+    if (numA < 0 && numA % 2 == 1)
+    {
+        degree = degree * (-1);
+    }
     return degree;
 }
 
