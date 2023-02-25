@@ -2,7 +2,7 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-int[] ganerateArray(int size, int minValue, int maxValue)
+int[] GenerateArray(int size, int minValue, int maxValue)
 {
     int[] array = new int[size];
     Random rand = new Random();
@@ -13,12 +13,12 @@ int[] ganerateArray(int size, int minValue, int maxValue)
     return array;
 }
 
-void printArray(int[] array)
+void PrintArray(int[] array)
 {
     System.Console.WriteLine("[" + String.Join(", ", array) + "]");
 }
 
-int sumOddPositions(int[] array)
+int SumOddPositions(int[] array)
 {
     int sum = 0;
     for (int i = 1; i < array.Length; i += 2)
@@ -28,6 +28,6 @@ int sumOddPositions(int[] array)
     return sum;
 }
 
-int[] array = ganerateArray(10, -30, 30);
-printArray(array);
-System.Console.WriteLine("Сумма элементов массива, стоящих на нечётных позициях, равна " + sumOddPositions(array));
+int[] array = GenerateArray(10, -30, 30);
+PrintArray(array);
+System.Console.WriteLine("Сумма элементов массива, стоящих на нечётных позициях, равна " + SumOddPositions(array));
