@@ -3,9 +3,9 @@
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
 System.Console.Write("Введите координаты первой точки перез пробел: ");
-int[] dotA = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
+int[] dotA = Array.ConvertAll(Console.ReadLine()!.Split(" "), int.Parse);
 System.Console.Write("Введите координаты второй точки перез пробел: ");
-int[] dotB = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
+int[] dotB = Array.ConvertAll(Console.ReadLine()!.Split(" "), int.Parse);
 
 if (dotA.Length == 3 && dotB.Length == 3)
 {
