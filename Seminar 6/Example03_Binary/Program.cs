@@ -33,3 +33,14 @@ void PrintArray(int[] array)
 
 int number = InputNumber();
 PrintArray(ToBinary(number)); 
+
+// Решение с помощью рекурсии
+
+// void ToBinary(int number)
+// {
+//     if (number == 0) return;
+//     ToBinary(number / 2);
+//     System.Console.Write(number % 2);
+// }
+
+// ToBinary(number);
