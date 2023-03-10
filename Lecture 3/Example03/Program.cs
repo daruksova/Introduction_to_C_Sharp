@@ -9,7 +9,7 @@ string text = "— Я думаю, — сказал князь, улыбаясь,
 + "вы бы взяли приступом согласие прусского короля."
 + "Вы так красноречивы. Вы дадите мне чаю?";
 
-string Replace(string text, char oldvalue, char newValue)
+string Replace(string text, string oldvalue, string newValue)
 {
     string result = String.Empty;
     int lenght = text.Length;
