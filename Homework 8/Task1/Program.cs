@@ -60,8 +60,8 @@ int[,] SortMatrix(int[,] matrix)
     return matrix;
 }
 
-int rows = ReadInt("Введите количество строк массива: ");
-int cols = ReadInt("Введите количество столбцов массива: ");
+int rows = ReadInt("Введите количество строк матрицы: ");
+int cols = ReadInt("Введите количество столбцов матрицы: ");
 int[,] matrix = GenerateMatrix(rows, cols);
 PrintMatrix(matrix);
 System.Console.WriteLine();

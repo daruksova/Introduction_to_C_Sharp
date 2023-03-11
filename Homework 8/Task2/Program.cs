@@ -69,8 +69,8 @@ int FindMinSum(int[] array)
     return rowNumber;
 }
 
-int rows = ReadInt("Введите количество строк массива: ");
-int cols = ReadInt("Введите количество столбцов массива: ");
+int rows = ReadInt("Введите количество строк матрицы: ");
+int cols = ReadInt("Введите количество столбцов матрицы: ");
 int[,] matrix = GenerateMatrix(rows, cols);
 PrintMatrix(matrix);
 int[] rowSum = FindElementsSum(matrix);
